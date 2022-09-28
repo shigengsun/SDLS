@@ -4,6 +4,9 @@ At this moment this code is undergoing heavy development and testing.
 
 The implementation is heavily based on the original SGD implementation in Pytorch for the purpose of retaining the original code design and workflow for ease of deployment as an optimizer.
 
+### This code contains a custom pytorch optimizer object SDLS (Stochastic Descent w. Line Search, SDLS.py)
+### and a sample example code for training DNN on Fashin Mnist Data (minst_ls.py)
+
 Besides producing a probable step acceptance mechanism for training DNNs, the focus is also to demonstrate one relatively simple way of incorperating line search into production of large machine learning solvers, so as to 
 
 
