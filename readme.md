@@ -13,7 +13,7 @@ Besides producing a probable step acceptance mechanism for training DNNs, the fo
 ### *invite more researchers from ML and optimizaton alike to the theory and practice of optimization and machine learning.*
 
 In short, the algorithm accepts a step if the armijo condition is satisfied:
-$$f_k(x_k) - f_k(x_k+ \alpha g_k) > c_0\alpha \|\g_k\|^2$$
+$$f_k(x_k) - f_k(x_k+ \alpha g_k) > c_0\alpha \|g_k\|^2$$
 Otherwise,
 $$\alpha /= \tau$$
 then the armijo condition is checked again. 
