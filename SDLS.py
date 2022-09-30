@@ -307,7 +307,7 @@ def _multi_tensor_sdls(params: List[Tensor],
         if closure is not None:
             with torch.enable_grad():
                 loss_new = closure()   
-                rho = (loss_old - loss_new + 0 )/lr/grad_norm
+                rho = (loss_old - loss_new+0 )/lr/grad_norm
         if lr < 1e-4:
             lr = 0
             break
