@@ -21,3 +21,6 @@ then the armijo condition is checked again.
 
 The code incorperates options to use sample consistency/inconsistency, as well as other techniques to handel noisy stochastic observations.
 The code skips an iterate if it thinks that the step would be too small to accept.
+
+
+In this project, we investigate the effect of using Armijo back-tracking line search for training of large deep neural networks in PyTorch. This project encompass a custom implementation for an optimizer object which is compatible with training DNNs using standard SGD directions. While line search in optimizer object in PyTorch can be highly non-trivial, this project demonstrate a clean and relatively easy way of implementation of this task. It introduces the idea of sample consistency and inconsistency, incorporated line search relaxation ideas and produce reliable results. It can also be used as a tutorial to obtaining more information in the forward and backward pass at run time of the training process. 
