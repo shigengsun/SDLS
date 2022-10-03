@@ -104,6 +104,9 @@ def train(dataloader, model, loss_fn, optimizer):
         lr = optimizer.param_groups[0]['lr']
 
         # closure implementation specifies sample consistency
+        
+        # note if use Xt and Yt in the implementation, we construct sample inconsistent line search. 
+        # If sample inconsistent, may consider relaxing the line search in the optimizer.
         def closure():
             optimizer.zero_grad()
             #output = model(Xt)
